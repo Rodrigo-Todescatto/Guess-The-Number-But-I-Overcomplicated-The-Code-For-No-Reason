@@ -21,13 +21,13 @@ int main() {
 
 	}
 
-	while (Number != RandomNumber) {
+	while (Number > 100 || Number != RandomNumber) {
 
-		cout << "No. Try again." << endl;
+		cout << "You didn't guess or put an invalid number." << endl;
 		cin >> Number;
 
 	}
- 
+
 	if (Number == RandomNumber) {
 
 		cout << "You guessed it!" << endl;
@@ -50,10 +50,10 @@ int main() {
 		cout << "ON THE FIRST TRY???!!! NO WAY" << endl;
 
 	}
+	
+	while (Number > 100 || Number != RandomNumber) {
 
-	while (Number != RandomNumber) {
-
-		cout << "No. Try again." << endl;
+		cout << "You didn't guess or put an invalid number." << endl;
 		cin >> Number;
 
 	}
